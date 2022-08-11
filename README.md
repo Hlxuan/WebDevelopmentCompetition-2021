@@ -10,9 +10,7 @@
 
 本项目为一虚拟商店的后端管理系统。详见
 
-[《广州科技职业技术大学Web开发竞赛.pdf]: https://github.com/Hlxuan/WebDevelopmentCompetition2021/blob/main/%E5%B9%BF%E5%B7%9E%E7%A7%91%E6%8A%80%E8%81%8C%E4%B8%9A%E6%8A%80%E6%9C%AF%E5%A4%A7%E5%AD%A6Web%E5%BC%80%E5%8F%91%E7%AB%9E%E8%B5%9B.pdf	"《广州科技职业技术大学Web开发竞赛.pdf》"
-
-。
+[《广州科技职业技术大学Web开发竞赛.pdf》](./广州科技职业技术大学Web开发竞赛.pdf)
 
 
 
