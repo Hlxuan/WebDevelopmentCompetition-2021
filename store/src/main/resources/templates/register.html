@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>注册 - 广科士多</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+            border: 0;
+        }
+        .kuan{
+            width: 100%;
+            text-align: center;
+        }
+        .biao{
+            margin-top: 20px;
+            width: 100%;
+        }
+        input{
+            border-radius: 10px;
+            padding: 10px;
+            border: 1px solid #d5d5d5;
+            margin-top: 10px;
+        }
+        .submit{
+            margin-top: 20px;
+            background-color: #396EB0;
+            padding: 5px 30px;
+            font-size: 16px;
+            border-radius: 10px;
+            color: white;
+            box-shadow: none;
+        }
+    </style>
+    <th:block th:include="layout/header"></th:block>
+</head>
+<body>
+    
+
+
+<div class="kuan">
+    <h1>创建您的广科ID</h1>
+    <br/>
+    <h4>只需一个广科ID,您即可访问内容</h4>
+  <form method="post" action="@{/register}">
+      <div class="biao" align="center">
+    <table>
+      <tr>
+         <td> 姓名：</td>
+         <td>
+             <input name="username" type="text" placeholder="请输入您的用户名" >
+            </td>
+      </tr>
+      <tr>
+          <td>密码：</td>
+          <td>
+            <input name="password" type="password" placeholder="请输入您的密码" >
+          </td>
+      </tr>
+      <tr>
+          <td>确认密码：</td>
+          <td> <input name="passwrod_" type="password" placeholder="请再次输入您的密码" ></td>
+      </tr>
+      <tr>
+          <td>邮箱：</td>
+          <td> <input name="email" type="email" placeholder="请输入您的邮箱" ></td>
+      </tr>
+      <tr style="text-align: center;">
+          <td colspan="2">
+              <input type="submit" class="submit">
+          </td>
+      </tr>
+    </table>
+  </form>
+
+</div>
+</div>
+
+</body>
+</html>

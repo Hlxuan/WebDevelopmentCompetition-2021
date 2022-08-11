@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8" />
+    <title>产品</title>
+    <th:block th:include="layout/header"></th:block>
+</head>
+<body>
+    <div class="container">
+        <div th:if="${not #lists.isEmpty(products)}">
+            <h2>全部产品</h2>
+            <table class="table table-striped">
+                <tr>
+                    <th>Id</th>
+                    <th>名称</th>
+                    <th>图片地址</th>
+                    <th>描述</th>
+                    <th>类型</th>
+                    <th>类别</th>
+                    <th>价格</th>
+                    <th>编辑</th>
+                    <th>删除</th>
+                </tr>
+                <tr th:each="product : ${products}">
+                    <td th:text="${product.id}">Id</td>
+                    <td th:text="${product.name}">名称</td>
+                    <td th:text="${product.img}">名称<img src="${product.img}"></td>
+                    <td th:text="${product.description}">描述</td>
+                    <td th:text="${product.type}">类型</td>
+                    <td th:text="${product.category}">类别</td>
+                    <td th:text="${product.price}">价格</td>
+                    <td><a th:href="${'/products/edit/' + product.id}" class="btn btn-default">编辑</a></td>
+                    <td><a th:href="${'/products/delete/' + product.id}" class="btn btn-danger">删除</a></td>
+                </tr>
+            </table>
+        </div>
+    </div>
+</body>
+
+</html>
